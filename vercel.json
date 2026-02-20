@@ -13,7 +13,7 @@
     }
 
 {"version": 1,
-  "name":,
+  "name": "smg-llc",
   "builds": [
     { "src": "apps/api/server.js", "use": "@vercel/node" },
     { "src": "apps/web/package.json", "use": "@vercel/static-build" }
