@@ -16,8 +16,8 @@
   "name": "smg-llc",
   "builds": [
     { "src": "apps/api/server.js", "use": "@vercel/node" },
-    { "src": "apps/web/package.json", "use": "@vercel/static-build" }
-  ],
+    { "src": "apps/web/package.json", "use": "@vercel/static-build" },
+  ],
   "routes": [
     { "src": "/api/(.*)", "dest": "apps/api/server.js" },
     { "src": "/dashboard", "dest": "/dashboard.html" },
