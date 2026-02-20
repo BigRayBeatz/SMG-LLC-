@@ -12,8 +12,7 @@
       "config": { "distDir": "dist" }
     }
 
-<head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">{
-  "version": 2,
+{"version": 1,
   "builds": [
     { "src": "apps/api/server.js", "use": "@vercel/node" },
     { "src": "apps/web/package.json", "use": "@vercel/static-build" }
@@ -25,10 +24,13 @@
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
-}w
-</pre></body></html>
+}
   ],
-  "rewrites": [
+  "rewrites": [{ 
+  "source": "/blog", 
+  "destination": "/blog.html" 
+}
+
     { "source": "/api/(.*)", "destination": "apps/api/index.js" },
     { "source": "/(.*)", "destination": "apps/web/$1" }
   ]
