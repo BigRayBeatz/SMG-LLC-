@@ -5,7 +5,20 @@ export default defineConfig({
   // Ensures the build output goes to 'dist', which Vercel detects by default
   build: {
     outDir: 'dist',
+    rollupOptions: {// vite.config.js update
+export default defineConfig({
+  build: {
+    outDir: 'dist',
     rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        dashboard: resolve(__dirname, 'dashboard.html'),
+        blog: resolve(__dirname, 'blog.html') // New SEO entry point
+      }
+    }
+  }
+});
+
       input: {
         main: resolve(__dirname, 'index.html'),      // Landing page
         dashboard: resolve(__dirname, 'dashboard.html') // Artist panel
