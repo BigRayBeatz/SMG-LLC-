@@ -9,7 +9,7 @@
     {
       "src": "apps/web/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }],
+      "config": { "distDir": "dist" },
     
 
 {"version": 1,
