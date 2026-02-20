@@ -13,7 +13,8 @@
     
 
 
-  ],
+
+      
   "rewrites": [{ 
   "source": "/blog", 
   "destination": "/blog.html" 
